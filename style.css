@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.green{
+    background-color: #228653;
+}
+.green-text{
+    color: #228653;
+}
+
+.blue{
+    background-color: #06799F;
+}
+.blue-text{
+    color: #06799F;
+}
+
+.white{
+    color: #F7F7F7;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    top: 0%;
+}
+
+nav titre {
+    float: left;
+    font-size: 50px;
+    padding-left: 25px;
+    font-family: 'Architects Daughter',sans-serif;
+    padding-top: 10px;
+}
+
+.navshop {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0%;
+}
+
+
+
+nav li:hover .sous-menu {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 999;
+}
+
+nav ul {
+    float: right;
+
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    font-family: 'Roboto',sans-serif;
+}
+
+body {
+     background: white;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+
+nav > ul > li > a{
+    padding: 30px 40px;
+    color: #FFF;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+main h2{
+    padding: 55px;
+}
+
+.mainshop {
+    margin-top: 100px;
+}
+
+.copyright {
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    width: 100px;
+    line-height: 35px;
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 2.5%;
+    position: absolute;
+    top: 15%;
+    font-size: 35px;
+    font-family: 'Architects Daughter',sans-serif;
+    color: rgb(0, 0, 0);
+
+}
+
+.submenu {
+    display: none;
+}
+
+.submenushop {
+    display: none;
+}
+
+.link-submenu:hover + .submenu, .submenu:hover {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 999;
+}
+
+.link-submenu:hover + .submenushop, .submenushop:hover {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 999;
+}
+
+.submenu li{
+    border-bottom: 1px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    background-color: white;
+}
+
+.submenushop li{
+    border-bottom: 1px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    background-color: black;
+}
+
+
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #222538;
+    width: 270px;
+}
+
+.submenushop li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #FFF;
+    width: 270px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.linkshop{
+    text-decoration: none;
+    color: white;
+}
+
+
+.card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 673px;
+}
+
+.card video{
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    object-fit: cover;
+}
+
+.card h2 {
+    position: absolute;
+    color: white;
+    bottom: 0%;
+    width: 100%;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.gallery {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    padding-left: 80px;
+    padding-top: 70px;
+}
+

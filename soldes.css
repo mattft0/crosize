@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+main{
+    margin-top: 100px;
+}
+
+.green{
+    background-color: #228653;
+}
+.green-text{
+    color: #228653;
+}
+
+.blue{
+    background-color: #06799F;
+}
+.blue-text{
+    color: #06799F;
+}
+
+.white{
+    color: #F7F7F7;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    top: 0%;
+}
+
+
+nav titre {
+    float: left;
+    font-size: 50px;
+    padding-left: 25px;
+    font-family: 'Architects Daughter',sans-serif;
+    padding-top: 10px ;
+}
+
+nav li:hover .sous-menu {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+nav ul {
+    float: right;
+
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    font-family: 'Roboto',sans-serif;
+}
+
+body {
+     margin: 0;
+     background: white; 
+}
+video { 
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    width: 50%;
+    height: auto;
+    z-index: -100;
+}
+
+
+
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+
+nav > ul > li > a{
+    padding: 30px 40px;
+    color: #FFF;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav li:hover .sous-menu {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.menu {
+    width: 100px;
+    line-height: 35px;
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 2.5%;
+    position: absolute;
+    top: 15%;
+    font-size: 35px;
+    font-family: 'Architects Daughter',sans-serif;
+    color: rgb(0, 0, 0);
+
+}
+
+.sous-menu {
+    display: none;
+}
+
+.sous-menu li{
+    border-bottom: 1px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    background-color: black;
+}
+
+.sous-menu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #FFF;
+    width: 270px
+}
+
+.lien {
+    text-decoration: none;
+    color: white;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.row .col-3 {
+    width: 25%;
+    height: 40%;
+    margin: 8,3333% 0;
+    background-color: white;
+    color: black;
+    border-radius: 10;
+    box-shadow: 10px 10px 20px darkgrey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Architects Daughter',sans-serif;
+}
+.row .col-3 img{
+    width: 80%;
+    height: 80%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.row .col-2 {
+    width: 45%;
+    margin: 2.5% 0;
+    background-color: red;
+}
+
+
+.blocs{
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+}
+
+.bloc{
+    width: 100px;   
+    height: 100px;
+}
+
+
+
+.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center h1 {
+    padding: 50px 0;
+    color: white;
+    display: flex;
+    position: absolute;
+    font-family: 'Roboto',sans-serif;
+
+}
+
+.text-center h2 {
+    padding: 20px 0;
+    font-family: 'Roboto',sans-serif;
+}   
+
+
+
+div a {
+    color: black;
+    font-family: 'Roboto',sans-serif;
+    font-size: 100%;
+}
+
+.paralax1, .paralax2, .paralax3, .paralax4{
+  position: relative;
+  opacity: 0.90;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.paralax1 {
+  background-image: url("img/motoshop4.jpg");
+  min-height: 300px;
+}
+
+.paralax2 {
+  background-image: url("img/motoshop2.jpg");
+  min-height: 350px;
+}
+
+.paralax3 {
+  background-image: url("img/motoshop3.jpg");
+  min-height: 300px;
+}
+
+.paralax4 {
+  background-image: url("img/motoshop42.jpg");
+  min-height: 300px;
+}
+
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: black;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 7px;
+}
+
+div h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .paralax1, .paralax2, .paralax3 {
+    background-attachment: scroll;
+  }
+}
